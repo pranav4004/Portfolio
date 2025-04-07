@@ -3,7 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['raw.githubusercontent.com'],
-    unoptimized: true
+    unoptimized: false,
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   experimental: {
     optimizeCss: true,
@@ -19,20 +21,21 @@ const nextConfig = {
           options: {
             mozjpeg: {
               progressive: true,
-              quality: 65
+              quality: 75
             },
             optipng: {
-              enabled: !dev,
+              enabled: true,
+              optimizationLevel: 7
             },
             pngquant: {
-              quality: [0.65, 0.90],
+              quality: [0.7, 0.9],
               speed: 4
             },
             gifsicle: {
               interlaced: false,
             },
             webp: {
-              quality: 75
+              quality: 80
             }
           }
         }
