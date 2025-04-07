@@ -8,21 +8,21 @@ const ClientsSection = () => {
       id: 1,
       title: 'Madan Jewellers',
       subtitle: 'Inventory Software & Website',
-      image: '/images/clients/client1.png',
+      image: '/images/clients/client1.svg',
       description: 'Developed comprehensive inventory management software and website for jewelry business'
     },
     {
       id: 2,
       title: 'Aina Gold',
       subtitle: 'Inventory Management',
-      image: '/images/clients/client2.jpg',
+      image: '/images/clients/client2.svg',
       description: 'Created specialized inventory software for gold and jewelry business'
     },
     {
       id: 3,
       title: 'Batwebs',
       subtitle: 'Project Management',
-      image: '/images/clients/client3.png',
+      image: '/images/clients/client3.svg',
       description: 'Led project management initiatives during internship'
     },
     {
