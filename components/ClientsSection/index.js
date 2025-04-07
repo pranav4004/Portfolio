@@ -56,11 +56,11 @@ const ClientsSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <div className="w-full h-40 mb-4 relative overflow-hidden rounded-lg bg-gray-50 dark:bg-slate-700">
+            <div className="w-full h-40 mb-4 relative overflow-hidden rounded-lg bg-gray-50 dark:bg-slate-700 flex items-center justify-center">
               <Image 
                 src={client.image} 
                 alt={client.title}
-                className="w-full h-full object-contain p-4"
+                className="w-auto h-auto max-w-full max-h-full object-contain p-4"
                 width={200}
                 height={160}
                 onError={(e) => {
