@@ -64,8 +64,7 @@ const ClientsSection = () => {
                 width={200}
                 height={160}
                 priority
-                quality={100}
-                loading="eager"
+                unoptimized
                 onError={(e) => {
                   e.target.style.display = 'none';
                   e.target.parentNode.innerHTML = `<div class="w-full h-full flex items-center justify-center text-4xl font-bold text-gray-400">${client.title.charAt(0)}</div>`;

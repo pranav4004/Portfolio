@@ -2,10 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['raw.githubusercontent.com'],
-    unoptimized: false,
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    domains: ['raw.githubusercontent.com', 'portfolio-bice-five-28.vercel.app'],
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'portfolio-bice-five-28.vercel.app',
+        pathname: '/**',
+      },
+    ],
   },
   experimental: {
     optimizeCss: true,
