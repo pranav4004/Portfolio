@@ -65,10 +65,15 @@ export default function Hero() {
               <ArrowDownRight className="w-5 h-5 group-hover:rotate-45 transition-transform duration-500" />
             </button>
 
-            <button className="group flex items-center gap-4 px-8 py-4 rounded-full border border-border-gray text-bone font-sans text-sm font-medium uppercase tracking-widest hover:bg-white/5 transition-all duration-500">
+            <a
+              href="/PRANAV_RESUME_CELONIS.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-4 px-8 py-4 rounded-full border border-border-gray text-bone font-sans text-sm font-medium uppercase tracking-widest hover:bg-white/5 transition-all duration-500"
+            >
               Download Resume
               <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-500" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

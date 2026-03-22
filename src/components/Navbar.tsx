@@ -115,10 +115,15 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <button className="group flex items-center gap-2 px-6 py-2.5 rounded-full border border-border-gray hover:bg-bone hover:text-obsidian transition-all duration-300 font-sans text-sm uppercase tracking-widest">
+            <a
+              href="/PRANAV_RESUME_CELONIS.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 px-6 py-2.5 rounded-full border border-border-gray hover:bg-bone hover:text-obsidian transition-all duration-300 font-sans text-sm uppercase tracking-widest"
+            >
               Resume
               <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-300" />
-            </button>
+            </a>
           </div>
 
           {/* Mobile Toggle */}
@@ -179,9 +184,14 @@ export default function Navbar() {
                   <a href="https://github.com/pranav4004" target="_blank" rel="noopener noreferrer" className="text-bone hover:text-muted-silver transition-colors">GitHub</a>
                 </div>
               </div>
-              <button className="flex items-center gap-2 px-8 py-4 rounded-full bg-bone text-obsidian font-sans text-sm uppercase tracking-widest">
+              <a
+                href="/PRANAV_RESUME_CELONIS.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-8 py-4 rounded-full bg-bone text-obsidian font-sans text-sm uppercase tracking-widest"
+              >
                 Resume <Download className="w-4 h-4" />
-              </button>
+              </a>
             </div>
           </motion.div>
         )}
